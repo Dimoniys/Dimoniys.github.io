@@ -22,9 +22,16 @@
             padding: 15px;
         }
         
+        .form-group {
+            outline: 2px solid gray;
+            
+            line-height: 180%;
+        }
+        
         .lbl-header {
-            font-size: 14x;
+            font-size: 12Sx;
             font-family: "verdana", sans-serif;
+            font-weight: bold;
             
             color: #1c1c79;
             text-transform: uppercase;
@@ -49,7 +56,9 @@
             <input type="password" id="pswd" class="input">
         </div>
 
+        <div class="form-group">
         <label class="lbl-header" for="">Пол: </label>
+        </div>
 
         <div class="form-group">
             <input type="radio" id="m" checked name="sex">
@@ -58,8 +67,9 @@
             <label class="lbl" for="w">Жен </label>
         </div>
 
+        <div class="form-group">
         <label class="lbl-header">Хобби: </label>
-
+        </div>
         <div class="form-group">
             <input type="checkbox" id="football" checked name="hobbi">
             <label class="lbl" for="football">Футбол </label>
