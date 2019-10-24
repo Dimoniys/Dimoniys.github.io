@@ -9,7 +9,8 @@
         
         .form-html5 {
             background-color: white;
-            /* width: 50%; */
+            background-image:  linear-gradient(to left, rgba(255, 0, 0, 0.31), rgba(45, 136, 59, 0.5));
+/*             width: 50%; */
             max-width: 400px;
             
             border: 3px solid #039b0e;
@@ -57,6 +58,17 @@
             text-transform: uppercase;
             
             box-shadow: 1px 2px 3px 0 rgba(0, 100, 0, 0.41);
+            
+            transition: transform 500ms;
+        }
+        
+        .btn:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+            
+            /* scale(1.4) rotate(45deg) skew(10deg) translate(50px)  */
+            
+            color: #a5a5a5;
         }
         
         .btn-reset{
