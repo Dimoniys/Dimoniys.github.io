@@ -22,6 +22,17 @@
             padding: 15px;
         }
         
+        fieldset {
+            margin-bottom: 20px;
+            border: 1px dotted rgba( 255, 0, 255, 0.36 );
+        }
+        
+        legend {
+            color: darkred;
+            text-transform: uppercase;
+            font-size: 12px;
+        }
+        
         .form-group {
             /*  outline: 2px solid gray; */
             
@@ -42,6 +53,11 @@
             color: #1c1c79;
             text-transform: uppercase;
             
+        }
+        
+        .txt-delivery {
+            width: 50%;
+            max-height: 100px;
         }
         
         .btn{
@@ -79,22 +95,19 @@
         .btn-submit{
             background-color: rgba(40, 40, 232, 0.75);
         }
+    
         
-        .txt-delivery {
-            width: 50%;
-            max-height: 100px;
+        @media(max-width: 600px) {
+            body {
+                border-color: chartreuse;
+            }
+            
+            .fld-add {
+                display: none;
+            }
         }
         
-        fieldset {
-            margin-bottom: 20px;
-            border: 1px dotted rgba( 255, 0, 255, 0.36 );
-        }
         
-        legend {
-            color: darkred;
-            text-transform: uppercase;
-            font-size: 12px;
-        }
         
     </style>
     
