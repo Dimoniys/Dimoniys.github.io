@@ -85,12 +85,25 @@
             max-height: 100px;
         }
         
+        fieldset {
+            margin-bottom: 20px;
+            border: 1px dotted rgba( 255, 0, 255, 0.36 );
+        }
+        
+        legend {
+            color: darkred;
+            text-transform: uppercase;
+            font-size: 12px;
+        }
+        
     </style>
     
 </head>
 
 <body>
     <form action="#" method="post" class="form-html5">
+       <fieldset>
+       <legend>Основные данные</legend>
         <div class="form-group">
             <label class="lbl-header" for="login">Логин: </label>
             <input type="text" id="login" class="input" placeholder="dmitry">
@@ -110,7 +123,9 @@
             <label class="lbl-header" for="email">E-MAIL: </label>
             <input type="email" id="email" class="input">
         </div>
-        
+        </fieldset>
+        <fieldset>
+        <legend>Дополнительно</legend>
         <div class="form-group">
             <label class="lbl-header" for="date">Дата: </label>
             <input type="date" id="date" class="input">
@@ -134,17 +149,23 @@
             <option value="kz">Казахстан</option>
         </select>
         </div>
-        
+        </fieldset>
+        <fieldset>
+        <legend>Ещё...</legend>
         <div class="form-group">
             <label class="lbl-header">Ваш любимый цвет: </label>
             <input name="color" type="color" class="input" value="#ffffff">
+        </div>
+        
+        <div class="form-group">
+            <input type="file">
         </div>
         
         <hr style="width: 50%; margin: 10px 0; border: 2px groove blue">
         <div class="form-group">
         <textarea name="delivery" class="txt-delivery" placeholder="Адрес доставки"></textarea>
         </div>
-
+        </fieldset>
         <div class="form-group">
             <input type="radio" id="m" checked name="sex">
             <label class="lbl" for="m">Муж </label>
