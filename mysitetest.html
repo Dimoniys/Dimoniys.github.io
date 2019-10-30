@@ -19,6 +19,18 @@
         .header-menu {
             display: inline;
         }
+        
+        .nav-header-1 {
+            background-color: rgb(207,8,52);
+        }
+        
+        .nav-header-1:hover {
+            color: black;
+        }
+        
+        .header-menu-text {
+            font-size: 18px;
+        }
     
     
     
@@ -33,10 +45,10 @@
             </div>
             <div class="row">
                 <div class="col-lg-7">
-                   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                   <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;">
+                    <div class="collapse navbar-collapse header-menu-text" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
-                          <a class="nav-item nav-link" href="#">Обо мне</a>
+                          <a style="color:white;" class="nav-item nav-link nav-header-1" href="#">Обо мне</a>
                           <a class="nav-item nav-link active" href="#">Главная<span class="sr-only">(current)</span></a>
                           <a class="nav-item nav-link" href="#">Услуги</a>
                           <a class="nav-item nav-link" href="#">Цены</a>
@@ -46,6 +58,10 @@
                         </div>
                     </div>
                     </nav>
+                </div>
+                
+                <div class="col-lg-4 d-flex justify-content-end">
+                    <button type="button" class="btn btn-danger">Задать вопрос</button>
                 </div>
             </div>
         </div>
