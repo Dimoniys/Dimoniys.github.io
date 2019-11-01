@@ -39,8 +39,39 @@
         .navbar-headermenu {
             background-color: white;
         }
+        
+        .col-nedv {
+            background: url(img/nedv.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            
+        }
     
-    
+        @media (min-width: 768px) {
+            .navbar-container {
+              position: sticky;
+              top: 0;
+              overflow-y: auto;
+              height: 100vh;
+            }
+            .navbar-container .navbar {
+              align-items: flex-start;
+              justify-content: flex-start;
+              flex-wrap: nowrap;
+              flex-direction: column;
+              height: 100%;
+            }
+            .navbar-container .navbar-collapse {
+              align-items: flex-start;
+            }
+            .navbar-container .nav {
+              flex-direction: column;
+              flex-wrap: nowrap;
+            }
+            .navbar-container .navbar-nav {
+              flex-direction: column !important;
+            }
+        }
     
     </style>
 </head>
@@ -53,7 +84,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-7">
-                   <nav class="navbar navbar-expand-lg navbar-light navbar-headermenu">
+                   <nav class="navbar navbar-expand-lg navbar-light navbar-headermenu mt-lg-3">
                     <div class="collapse navbar-collapse header-menu-text" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
                           <a style="color:white;" class="nav-item nav-link nav-header-1" href="#">Обо мне</a>
@@ -68,14 +99,59 @@
                     </nav>
                 </div>
                 
-                <div class="col-lg-1 order-10 offset-lg-2">
+                <div class="col-lg-1 order-10 offset-lg-2 mt-lg-3 mt-md-3 mt-sm-3">
                     <button type="button" class="btn btn-danger btn-askme">Задать вопрос</button>
                 </div>
             </div>
         </div>
-        
-        
     </header>
+    <main class="container">
+        <div class="row">
+            <div class="col-md-3 col-lg-3 navbar-container">
+            <!-- Вертикальное меню -->
+                <nav class="navbar navbar-expand-md navbar-light">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbar">
+                            <!-- Пункты вертикального меню -->
+                            <ul class="navbar-nav">
+                              <li class="nav-item">
+                              <a class="nav-link" href="#link-1">Семейные споры</a>
+                              </li>
+                              <li class="nav-item">
+                              <a class="nav-link" href="#link-2">Земельные споры</a>
+                              </li>
+                              <li class="nav-item">
+                              <a class="nav-link" href="#link-3">Страховые споры</a>
+                              </li>
+                              <li class="nav-item">
+                              <a class="nav-link" href="#link-4">Арбитражные споры</a>
+                              </li>
+                              <li class="nav-item">
+                              <a class="nav-link" href="#link-5">Сделки с недвижимостью</a>
+                              </li>
+                              <li class="nav-item">
+                              <a class="nav-link" href="#link-6">Трудовые споры</a>
+                              </li>
+                              <li class="nav-item">
+                              <a class="nav-link" href="#link-7">Защита прав потребителей</a>
+                              </li>
+                            </ul>
+                        </div>
+                </nav>
+            </div>
+            
+                <div class="col-lg-4 col-nedv">
+                    Сопровождение сделок с недвижимостью
+                </div>
+        </div>
+        
+        
+        
+        
+        
+    </main>
     
     
     
