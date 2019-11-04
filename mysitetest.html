@@ -44,8 +44,27 @@
             background: url(img/nedv.jpg);
             background-repeat: no-repeat;
             background-size: 100%;
+            position: relative;
             
         }
+        
+        .text-img {
+            text-decoration: none;
+            color: black;
+            padding-left: 200px;
+            padding-top: 100px;
+            object-position: center;
+            left: 0;
+        }
+        
+        .col-potreb {
+            background: url(img/potreb.jpeg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            position: relative;           
+        }
+        
+        
     
         @media (min-width: 768px) {
             .navbar-container {
@@ -87,13 +106,12 @@
                    <nav class="navbar navbar-expand-lg navbar-light navbar-headermenu mt-lg-3">
                     <div class="collapse navbar-collapse header-menu-text" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
-                          <a style="color:white;" class="nav-item nav-link nav-header-1" href="#">Обо мне</a>
-                          <a class="nav-item nav-link active" href="#">Главная<span class="sr-only">(current)</span></a>
-                          <a class="nav-item nav-link" href="#">Услуги</a>
-                          <a class="nav-item nav-link" href="#">Цены</a>
-                          <a class="nav-item nav-link" href="#">Документация</a>
-                          <a class="nav-item nav-link" href="#">Вопросы</a>
-                          <a class="nav-item nav-link" href="#">Цены</a>
+                          <a style="color:white;" class="nav-item nav-link nav-header-1 mx-lg-1" href="#">Обо мне</a>
+                          <a class="nav-item nav-link active mx-lg-1" href="#">Главная<span class="sr-only">(current)</span></a>
+                          <a class="nav-item nav-link mx-lg-1" href="#">Услуги</a>
+                          <a class="nav-item nav-link mx-lg-1" href="#">Цены</a>
+                          <a class="nav-item nav-link mx-lg-1" href="#">Документация</a>
+                          <a class="nav-item nav-link mx-lg-1" href="#">Вопросы</a>
                         </div>
                     </div>
                     </nav>
@@ -142,8 +160,11 @@
                 </nav>
             </div>
             
-                <div class="col-lg-4 col-nedv">
-                    Сопровождение сделок с недвижимостью
+                <div class="col-lg-4 col-nedv" style="height: 210px;">
+                     <a href="#" class="text-img text-center font-weight-bold">Сопровождение<br> сделок с<br> недвижимостью</a>
+                </div>
+                <div class="col-lg-4 mx-lg-3 col-potreb" style="height: 210px;">
+                     <a href="#" class="text-img text-center font-weight-bold ">Сопровождение<br> сделок с<br> недвижимостью</a>
                 </div>
         </div>
         
